@@ -85,9 +85,10 @@ section{padding:88px 0}
    Home page
    ========================================================= */
 .hero{padding:96px 0 64px;text-align:center;background:#FFFFFF}
-.hero h1{font-family:'Montserrat';font-size:clamp(34px,4.6vw,56px);font-weight:700;letter-spacing:-.03em;color:#123155;margin:0 auto 22px;max-width:26ch;line-height:1.25;text-transform:capitalize}
+.hero .wrap{max-width:1300px}
+.hero h1{font-family:'Montserrat';font-size:clamp(34px,4.6vw,56px);font-weight:700;letter-spacing:-.03em;color:#123155;margin:0 auto 22px;max-width:46ch;line-height:1.25;text-transform:capitalize}
 .hero h1 span{color:var(--orange)}
-.hero p.sub{font-family:'Montserrat';font-size:18px;color:#000;max-width:64ch;margin:0 auto 30px;line-height:1.7}
+.hero p.sub{font-family:'Montserrat';font-size:18px;color:#000;max-width:74ch;margin:0 auto 30px;line-height:1.7}
 .hero .cta-row{justify-content:center}
 .micro{margin-top:20px;color:var(--muted);font-size:14px}
 
@@ -107,7 +108,7 @@ section{padding:88px 0}
 @media(max-width:860px){.hp-cards{grid-template-columns:1fr}}
 .hp-card{background:#F9F8F6;border-radius:14px;box-shadow:0 6px 16px -8px rgba(0,0,0,.2);padding:36px 28px}
 .hp-card img{width:48px;height:48px;object-fit:contain;margin:0 auto 18px;display:block}
-.hp-card h3{font-family:'Montserrat';font-weight:600;font-size:22px;color:#092C4F;margin-bottom:12px}
+.hp-card h3{font-family:'Montserrat';font-weight:600;font-size:22px;color:#092C4F;margin-bottom:12px;min-height:2.28em;display:flex;align-items:center;justify-content:center}
 .hp-card p{font-family:'Montserrat';font-size:15px;color:#000;margin-bottom:20px;line-height:1.6}
 .hp-rule{display:block;width:70px;height:3px;background:#E17438;margin:0 auto}
 
