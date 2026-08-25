@@ -7,7 +7,7 @@
 <meta name="description" content="Built for confidential matters: database-level isolation with row-level security, permanent redaction, a full audit log of every action, and US data residency.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-page="security">
@@ -15,45 +15,89 @@
 <header id="site-header"></header>
 
 <main>
-  <section class="pbanner">
+  <section class="lp-hero">
     <div class="wrap">
-      <span class="eyebrow">Security &amp; Architecture</span>
-      <h1>Built for confidential matters.</h1>
-      <p>Privileged documents and Bates-numbered productions demand more than a shared folder. Exhibit Binder Studio isolates every organization's data and records everything that happens to it.</p>
+      <span class="lp-eyebrow">Security &amp; Architecture</span>
+      <h1 class="lp-h1">Built For Confidential Matters.</h1>
+      <p class="lp-sub">Privileged documents and Bates-numbered productions demand more than a shared folder. Exhibit Binder Studio isolates every organization's data and records everything that happens to it.</p>
     </div>
   </section>
 
-  <section>
+  <section class="sec-cards-section">
     <div class="wrap">
-      <div class="sec-grid">
-        <div class="pill"><div class="ic">▚</div><div><h3>Isolation by design</h3><p>Every organization's documents are separated at the database level with row-level security: one firm's documents are never returned in another firm's queries, independent of application code.</p></div></div>
-        <div class="pill"><div class="ic">▤</div><div><h3>Permanent redaction</h3><p>Redaction removes content; it doesn't hide it. Once committed, the underlying text, images, and vector graphics are gone from the file, irreversible by design.</p></div></div>
-        <div class="pill"><div class="ic">◉</div><div><h3>Full audit log</h3><p>Every mutating action (upload, compile, export, share, invite, delete) is captured with actor, timestamp, and before/after state.</p></div></div>
-        <div class="pill"><div class="ic">⚑</div><div><h3>US data residency</h3><p>Documents are stored in US-only storage today, with a routing mechanism ready for additional regions.</p></div></div>
-        <div class="pill"><div class="ic">◈</div><div><h3>Granular access control</h3><p>Custom organization roles and API keys let you decide exactly who can view, edit, export, or share each matter.</p></div></div>
-        <div class="pill"><div class="ic">⤒</div><div><h3>Enterprise sign-on</h3><p>Single sign-on via Microsoft Entra is available for enterprise teams that manage access centrally.</p></div></div>
+      <div class="sec-cards">
+        <div class="sec-card">
+          <img src="assets/img/icon-isolation.png" alt="">
+          <h3>Isolation by design</h3>
+          <p>Every organization's documents are separated at the database level with row-level security: one firm's documents are never returned in another firm's queries, independent of application code.</p>
+        </div>
+        <div class="sec-card">
+          <img src="assets/img/icon-redaction.png" alt="">
+          <h3>Permanent redaction</h3>
+          <p>Redaction removes content; it doesn't hide it. Once committed, the underlying text, images, and vector graphics are gone from the file, irreversible by design.</p>
+        </div>
+        <div class="sec-card">
+          <img src="assets/img/icon-audit.png" alt="">
+          <h3>Full audit log</h3>
+          <p>Every mutating action (upload, compile, export, share, invite, delete) is captured with actor, timestamp, and before/after state.</p>
+        </div>
+        <div class="sec-card">
+          <img src="assets/img/icon-dataresidency.png" alt="">
+          <h3>US data residency</h3>
+          <p>Documents are stored in US-only storage today, with a routing mechanism ready for additional regions.</p>
+        </div>
+        <div class="sec-card">
+          <img src="assets/img/icon-control.png" alt="">
+          <h3>Granular access control</h3>
+          <p>Custom organization roles and API keys let you decide exactly who can view, edit, export, or share each matter.</p>
+        </div>
+        <div class="sec-card">
+          <img src="assets/img/icon-signon.png" alt="">
+          <h3>Enterprise sign-on</h3>
+          <p>Single sign-on via Microsoft Entra is available for enterprise teams that manage access centrally.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="stackwrap">
+  <section class="stack-section">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Under the Hood</span>
-        <h2>A modern, isolated architecture.</h2>
-        <p class="lead">PDF assembly and OCR run in a dedicated service, so a burst of heavy uploads never slows normal work.</p>
+      <div class="stack-head">
+        <span class="lp-eyebrow">Under the Hood</span>
+        <h2>A Modern, Isolated Architecture.</h2>
+        <p>PDF assembly and OCR run in a dedicated service, so a burst of heavy uploads never slows normal work.</p>
       </div>
-      <div class="stack-grid">
-        <div class="scard"><div class="l">Front End</div><p>React + TypeScript<span>Fast, browser-based UI</span></p></div>
-        <div class="scard"><div class="l">API</div><p>NestJS on Node.js<span>Application &amp; background workers</span></p></div>
-        <div class="scard"><div class="l">PDF &amp; OCR</div><p>PyMuPDF + Tesseract<span>Isolated processing service</span></p></div>
-        <div class="scard"><div class="l">Database</div><p>PostgreSQL<span>Row-level security</span></p></div>
+      <div class="stack-grid2">
+        <div class="stack-card">
+          <img src="assets/img/icon-frontend.png" alt="">
+          <div class="label">Front End</div>
+          <h4>React + TypeScript</h4>
+          <span>Fast, browser-based UI</span>
+        </div>
+        <div class="stack-card">
+          <img src="assets/img/icon-api.png" alt="">
+          <div class="label">API</div>
+          <h4>NestJS on Node.js</h4>
+          <span>Application &amp; background workers</span>
+        </div>
+        <div class="stack-card">
+          <img src="assets/img/icon-ocr.png" alt="">
+          <div class="label">PDF &amp; OCR</div>
+          <h4>PyMuPDF + Tesseract</h4>
+          <span>Isolated processing service</span>
+        </div>
+        <div class="stack-card">
+          <img src="assets/img/icon-database.png" alt="">
+          <div class="label">Database</div>
+          <h4>PostgreSQL</h4>
+          <span>Row-level security</span>
+        </div>
       </div>
-      <p class="isolate">The PDF-assembly and OCR service is isolated from the main application, so OCR-heavy jobs are handled separately and never degrade day-to-day performance for the rest of your team.</p>
+      <p class="stack-note">The PDF-assembly and OCR service is isolated from the main application, so OCR-heavy jobs are handled separately and never degrade day-to-day performance for the rest of your team.</p>
     </div>
   </section>
 
-  <section class="cta cta-light"><div class="wrap"><h2>Questions about security or deployment?</h2><p>We're happy to walk your team through isolation, redaction, and audit logging in detail.</p><div class="cta-row"><a class="btn btn-primary" href="contact.html">Talk to us</a><a class="link-arrow" href="features.html">← Back to features</a></div></div></section>
+  <section class="cta cta-dark"><div class="wrap"><h2>Questions about security or deployment?</h2><p>We're happy to walk your team through isolation, redaction, and audit logging in detail.</p><div class="cta-row"><a class="btn btn-primary" href="contact.html">Talk to us</a></div></div></section>
 </main>
 
 <footer id="site-footer"></footer>

@@ -7,7 +7,7 @@
 <meta name="description" content="Instant exhibit binders, Bates stamping, court-specific QC, soft redaction, OCR and full-text search, and one-click export. Everything the manual binder process forgets, handled automatically.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-page="features">
@@ -15,50 +15,78 @@
 <header id="site-header"></header>
 
 <main>
-  <section class="pbanner">
+  <section class="lp-hero">
     <div class="wrap">
-      <span class="eyebrow">Features</span>
-      <h1>Everything the manual process forgets, handled automatically.</h1>
-      <p>Exhibit Binder Studio was built around US exhibit and Bates conventions from the start. Here's what it does for you on every matter.</p>
+      <span class="lp-eyebrow">Features</span>
+      <h1 class="lp-h1">Everything The Manual Process Forgets, <span>Handled Automatically.</span></h1>
+      <p class="lp-sub">Exhibit Binder Studio was built around US exhibit and Bates conventions from the start. Here's what it does for you on every matter.</p>
     </div>
   </section>
 
-  <section>
+  <section class="feat-grid-section">
     <div class="wrap">
-      <div class="fgrid">
-        <div class="card"><div class="ic">▦</div><h3>Instant Exhibit Binders</h3><p>Drag and drop exhibits into structured binders; automatic numbering, cover pages, and exhibit indexes are generated for you.</p></div>
-        <div class="card"><div class="ic">#</div><h3>Bates Stamping</h3><p>Sequential Bates numbers across an entire production in one action: configurable prefix, start number, and digit padding, with independent sequences per section.</p></div>
-        <div class="card"><div class="ic">✓</div><h3>Court-Specific QC</h3><p>Automated pre-filing quality checklists that catch structural and formatting issues before you file. (Detail below.)</p></div>
-        <div class="card"><div class="ic">▤</div><h3>Soft Redaction</h3><p>Mark, preview, then commit. Once applied, the underlying text, images, and vector graphics are permanently removed from the PDF, not merely covered. Irreversible by design.</p></div>
-        <div class="card"><div class="ic">⌕</div><h3>OCR &amp; Full-Text Search</h3><p>Scanned PDFs and image documents are OCR-processed automatically, so every recognized word becomes searchable across the matter.</p></div>
-        <div class="card"><div class="ic">⤓</div><h3>One-Click Export</h3><p>Export a combined, bookmarked PDF binder or a section-scoped split ZIP, with privilege or attorneys'-eyes-only watermarks applied automatically.</p></div>
+      <div class="feat-grid">
+        <div class="feat-card">
+          <img src="assets/img/icon-binders.png" alt="">
+          <h3>Instant Exhibit Binders</h3>
+          <p>Drag and drop exhibits into structured binders; automatic numbering, cover pages, and exhibit indexes are generated for you.</p>
+        </div>
+        <div class="feat-card">
+          <img src="assets/img/icon-bates.png" alt="">
+          <h3>Bates Stamping</h3>
+          <p>Sequential Bates numbers across an entire production in one action: configurable prefix, start number, and digit padding, with independent sequences per section.</p>
+        </div>
+        <div class="feat-card">
+          <img src="assets/img/icon-checklist.png" alt="">
+          <h3>Court-Specific QC</h3>
+          <p>Automated pre-filing quality checklists that catch structural and formatting issues before you file. (Detail below.)</p>
+        </div>
+        <div class="feat-card">
+          <img src="assets/img/icon-redaction.png" alt="">
+          <h3>Soft Redaction</h3>
+          <p>Mark, preview, then commit. Once applied, the underlying text, images, and vector graphics are permanently removed from the PDF, not merely covered. Irreversible by design.</p>
+        </div>
+        <div class="feat-card">
+          <img src="assets/img/icon-ocr.png" alt="">
+          <h3>OCR &amp; Full-Text Search</h3>
+          <p>Scanned PDFs and image documents are OCR-processed automatically, so every recognized word becomes searchable across the matter.</p>
+        </div>
+        <div class="feat-card">
+          <img src="assets/img/icon-oneclick.png" alt="">
+          <h3>One-Click Export</h3>
+          <p>Export a combined, bookmarked PDF binder or a section-scoped split ZIP, with privilege or attorneys'-eyes-only watermarks applied automatically.</p>
+        </div>
       </div>
-      <div class="also"><b>Also included:</b> <span>Exhibit index export to CSV · custodian column on the index · comments pinned to a specific point on a specific page · full version history of every compiled binder · section-scoped share links · API keys · custom organization roles · a full audit log of every action.</span></div>
     </div>
   </section>
 
-  <section class="qc">
+  <section class="feat-qc-section">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Court-Specific QC</span>
-        <h2>Quality checks built for the way courts actually file.</h2>
-        <p class="lead">Seven presets run a fast structural pass before anything leaves your desk.</p>
+      <div class="feat-qc-head">
+        <span class="lp-eyebrow">Court-Specific QC</span>
+        <h2>Quality Checks Built For The Way Courts Actually File.</h2>
+        <p>Seven presets run a fast structural pass before anything leaves your desk.</p>
       </div>
-      <div class="presets">
-        <div class="preset"><span class="chk">✓</span> US Federal: Generic Structural Checks</div>
-        <div class="preset"><span class="chk">✓</span> US Federal: Technical Filing (Fed. R. Civ. P. 5.2)</div>
-        <div class="preset"><span class="chk">✓</span> S.D.N.Y.: Individual Practice Checks</div>
-        <div class="preset"><span class="chk">✓</span> N.D. Cal.: Standing Order Checks</div>
-        <div class="preset"><span class="chk">✓</span> Delaware Court of Chancery: Format Checks</div>
-        <div class="preset"><span class="chk">✓</span> State Court: Generic Checks</div>
-        <div class="preset"><span class="chk">✓</span> PII &amp; Sensitive Data Scan</div>
-        <div class="preset" style="opacity:.55;border-style:dashed">＋ More presets on the roadmap</div>
+      <div class="feat-presets">
+        <div class="feat-preset"><span class="chk">✓</span> US Federal: Generic Structural Checks</div>
+        <div class="feat-preset"><span class="chk">✓</span> US Federal: Technical Filing (Fed. R. Civ. P. 5.2)</div>
+        <div class="feat-preset"><span class="chk">✓</span> S.D.N.Y.: Individual Practice Checks</div>
+        <div class="feat-preset"><span class="chk">✓</span> N.D. Cal.: Standing Order Checks</div>
+        <div class="feat-preset"><span class="chk">✓</span> Delaware Court of Chancery: Format Checks</div>
+        <div class="feat-preset"><span class="chk">✓</span> State Court: Generic Checks</div>
+        <div class="feat-preset"><span class="chk">✓</span> PII &amp; Sensitive Data Scan</div>
+        <div class="feat-preset feat-preset-ghost">＋ More presets on the roadmap</div>
       </div>
-      <p class="qc-note">These are <b>structural and pattern-based checks</b>: they verify your binder against consistent formatting and data-handling rules, then surface anything that needs a human's eyes. They're a fast first pass, <b>not a substitute for attorney review</b> of your specific court's rules.</p>
     </div>
   </section>
 
-  <section class="cta cta-light"><div class="wrap"><h2>See it on your own matter.</h2><p>Put a real binder together and watch the index, Bates numbers, and bookmarks stay in sync.</p><div class="cta-row"><a class="btn btn-primary" href="contact.html">Try Exhibit Binder Studio</a><a class="link-arrow" href="security.html">How we keep it secure →</a></div></div></section>
+  <section class="feat-note-band">
+    <div class="wrap">
+      <p>These are <b>structural and pattern-based checks</b>: they verify your binder against consistent formatting and data-handling rules, then surface anything that needs a human's eyes. They're a fast first pass, <b>not a substitute for attorney review</b> of your specific court's rules.</p>
+    </div>
+  </section>
+
+  <section class="cta cta-dark"><div class="wrap"><h2>See it on your own matter.</h2><p>Put a real binder together and watch the index, Bates numbers, and bookmarks stay in sync.</p><div class="cta-row"><a class="btn btn-primary" href="contact.html">Try Exhibit Binder Studio</a><a class="btn btn-outline-white" href="security.html">How We Keep It Secure</a></div></div></section>
 </main>
 
 <footer id="site-footer"></footer>
